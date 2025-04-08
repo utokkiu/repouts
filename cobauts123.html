@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #f0f0f0;
+        }
+
+        tfoot {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            border: 3px, solid, yellow;
+            color: blue;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: orange;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Halo Dunia!</h1>
+    <p>Ini contoh penggunaan tag style di HTML.</p>
+    <button class="btn">Klik Saya</button>
+    <h2 style="text-align:center;">Daftar Produk</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Produk</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mouse Wireless</td>
+                <td>Rp120.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Keyboard Mechanical</td>
+                <td>Rp450.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Monitor 24"</td>
+                <td>Rp1.800.000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>Rp2.370.000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2 style="text-align: center;">Daftar Siswa</h2>
+
+    <table style="width: 80%; border-collapse: collapse; margin: auto;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; padding: 10px; background-color: #f2f2f2;">No</th>
+                <th style="border: 1px solid black; padding: 10px; background-color: #f2f2f2;">Nama</th>
+                <th style="border: 1px solid black; padding: 10px; background-color: #f2f2f2;">Kelas</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; padding: 10px;">1</td>
+                <td style="border: 1px solid black; padding: 10px;">Ayu Lestari</td>
+                <td style="border: 1px solid black; padding: 10px;">10 IPA 1</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 10px;">2</td>
+                <td style="border: 1px solid black; padding: 10px;">Rama Dwi</td>
+                <td style="border: 1px solid black; padding: 10px;">10 IPA 2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3"
+                    style="border: 1px solid black; padding: 10px; background-color: #e0e0e0; text-align: center;">
+                    Total Siswa: 2
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
+
 </html>
